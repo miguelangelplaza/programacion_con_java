@@ -1,27 +1,44 @@
+package ejercicios;
+
 /**
- * T04Ejercicio01 // Escribir un programa que solicite la edad y diga si es menor, mayor o jubilado 
- * 
+ * T04Ejercicio01
  * 
  * @author Miguel Angel Plaza Rueda 
  */
 import java.util.Scanner;
+
 public class T04Ejercicio01 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Por favor, introduzca un día de la semana y te diré qué módulo toca a primera hora: ");
+    String dia = sc.nextLine();
+    dia = dia.toLowerCase();                 //Sirve para convertir todos los caracteres a minúscula
 
-public static void main(String[] args) {
-  Scanner sc = new Scanner(System.in);
-  int edad; 
-  
+    switch (dia) {
+      case "lunes":
+        System.out.println("FOL");
+        break;
 
-  System.out.println("¿Cual es tu edad?");
-  edad = sc.nextInt();
+      case "martes", "viernes":
+        System.out.println("Programación");
+        break;
 
-  if (edad >= 18); {
-    System.out.println("Eres mayor de edad");
-  }  {
-    System.out.println ("Eres menor de edad");
-      if edad >=65;
-      System.out.println("Estas jubilado");
-      }  {
-        } 
+      case "miércoles", "miercoles":
+        System.out.println("Entornos de Desarrollo");
+        break;
+      
+      case "jueves":
+        System.out.println("Bases de Datos");
+        break;
+      
+      case "sábado", "sabado", "domingo":
+        System.out.println("Los fines de semana no hay clase");
+        break;
+
+      default:
+        System.out.println("El día introducido no es correcto.");
+        break;
     }
+    sc.close();
   }
+}
