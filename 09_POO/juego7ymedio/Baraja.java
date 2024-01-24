@@ -19,6 +19,16 @@ package juego7ymedio;
  * 
  */
 public class Baraja {
+  public static void main(String[] args) {
+    String[] palos = {"oros", "copas", "espadas", "bastos"}
+    String[] numeros = {"1", "2", "3", "4", "5", "6", "7","sota", "caballo", "rey"}
+  }
+  public baraja(){ 
+    inicializar();
 
-  
+  }
+
+  void inicializar(){
+    
+  }
 }
