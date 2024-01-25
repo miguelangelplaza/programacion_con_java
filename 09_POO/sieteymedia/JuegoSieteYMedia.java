@@ -43,7 +43,7 @@ public class JuegoSieteYMedia {
             jugador.incrementarSaldo(puntuacionJugador);
         } else {
             System.out.println("¡Has perdido! Se resta la apuesta de tu saldo.");
-            double getSaldo = 0; 
+            
         }
     }
 }
