@@ -26,6 +26,7 @@ Por ejemplo, para inicial = 3 y final = 7:
     int numIntroducido;
     int inicial;
     int fin;
+   
 
     //Almacenamos
     for (int i = 0; i < arrayOriginal.length; i++) {
