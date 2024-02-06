@@ -1,0 +1,7 @@
+/**
+ * NprimerosPrimos
+ */
+public class NprimerosPrimos {
+
+  
+}

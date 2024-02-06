@@ -1,0 +1,7 @@
+/**
+ * NumerosAmigos
+ */
+public class NumerosAmigos {
+
+  
+}
