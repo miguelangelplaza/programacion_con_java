@@ -1,4 +1,4 @@
-package ejercicios;
+
 
 /**
  * T07Ejercicio03 bidimensional (arrays)
