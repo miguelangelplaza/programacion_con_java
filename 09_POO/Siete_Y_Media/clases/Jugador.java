@@ -1,4 +1,4 @@
-package src.clases;
+package clases;
 /**
  * Clase Jugador Juego Siete y Media
  * 
@@ -21,20 +21,20 @@ public class Jugador {
 
   //Getters
 
-  public int getSaldo() {
+  public int getSaldo() {    //Devuelve el saldo del jugador
     return saldo;
   }
-  public int getApuesta() {
+  public int getApuesta() {  //Devuelve la apuesta del jugador
     return apuesta;
   }
 
   //Setters
 
-  public void setSaldo(int saldo) {
+  public void setSaldo(int saldo) {   //Establece el Saldo del jugador
     this.saldo = saldo;
   }
 
-  public void setApuesta(int apuesta) {
+  public void setApuesta(int apuesta) {    //Establece la apuesta del jugador
     this.apuesta = apuesta;
   }
 }

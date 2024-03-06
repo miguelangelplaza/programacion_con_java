@@ -1,5 +1,5 @@
-package src;
-import src.clases.*;
+
+import clases.*;
 /**
  * Juego Siete y Media
  * 
@@ -18,7 +18,7 @@ import src.clases.*;
     String respuestaSeguirJugando;
     boolean turnoBanca = true;
     
-    Jugador jugador = new Jugador();
+    Jugador jugador = new Jugador();        //Crear Nuevo Jugador
 
     System.out.println(" ------------------------------ ");
     System.out.println("|        SIETE y  MEDIA        |");
@@ -27,24 +27,24 @@ import src.clases.*;
 
 
     Baraja baraja = new Baraja();
-    Mano manoJugador= new Mano();
+    Mano manoJugador= new Mano();         //Crear Baraja, Mano del Jugador y Mano de la Banca
     Mano manoBanca= new Mano();
   
     do {
 
-      baraja.barajar();
+      baraja.barajar();                  //Barajar
       System.out.println("En tu monedero tienes " + jugador.getSaldo() + " euros.");
       System.out.println("");
 
-      if (jugador.getSaldo() > 0) {
+      if (jugador.getSaldo() > 0) {        //En caso de que el saldo sea mayor a 0
 
         do {
           correcto = true;
 
           System.out.print("¿Cuánto dinero quieres apostar?: ");
-          jugador.setApuesta(Integer.parseInt(System.console().readLine()));
+          jugador.setApuesta(Integer.parseInt(System.console().readLine()));  //Introducir apuesta
     
-          if (jugador.getApuesta() > jugador.getSaldo()) {
+          if (jugador.getApuesta() > jugador.getSaldo()) {            //Repetir en caso de introducir un número incorrecto
             System.out.println("");
             System.out.println("ERROR, no puedes apostar mas dinero de lo que tienes");
             System.out.println("");
@@ -72,29 +72,29 @@ import src.clases.*;
         do {
           seguirJugando = true;
     
-          cartaJugador = baraja.repartir();
+          cartaJugador = baraja.repartir();   //Repartir una carta
     
           System.out.println("");
           System.out.print("Ha sacado el ");
-          baraja.verCarta(cartaJugador);
+          baraja.verCarta(cartaJugador);     //Visualizar la carta repartida
     
-          manoJugador.acumula(cartaJugador);
+          manoJugador.acumula(cartaJugador);  //Se acumulan los puntos de la carta
     
           System.out.println("");
-          System.out.println("Total de puntos acumulados en esta ronda: " + manoJugador.getPuntosAcumulados());
+          System.out.println("Total de puntos acumulados en esta ronda: " + manoJugador.getPuntosAcumulados());  //Ver puntos acumulados
           System.out.println("");
       
-          if (manoJugador.getPuntosAcumulados() < 7.5) {
+          if (manoJugador.getPuntosAcumulados() < 7.5) {    //Si los puntos son menores a 7.5 preguntar si desea seguir o dar turno a la banca
     
             System.out.print("¿Desea continuar? (Y/N): ");
             respuestaSeguirJugando = System.console().readLine();
             
-            if (respuestaSeguirJugando.equals("Y")) {
+            if (respuestaSeguirJugando.equals("Y") || respuestaSeguirJugando.equals("y")) {
               seguirJugando = true;
             } else {
               System.out.println("");
               System.out.println(" --------------------- ");
-              System.out.println("|  TURNO DE LA BANCA  |");
+              System.out.println("|  TURNO DE LA BANCA  |");      //Mismo proceso que el jugador pero aleatorio
               System.out.println(" --------------------- ");
 
               baraja.barajar();
@@ -181,7 +181,7 @@ import src.clases.*;
         repuestaJugar = System.console().readLine();
         System.out.print("");
       
-        if (repuestaJugar.equals("Y")) {
+        if (repuestaJugar.equals("Y") || repuestaJugar.equals("y")) {
           jugar = true;
           System.out.println("");
         } else {
@@ -204,7 +204,7 @@ import src.clases.*;
         repuestaJugar = System.console().readLine();
         System.out.print("");
         
-        if (repuestaJugar.equals("Y")) {
+        if (repuestaJugar.equals("Y") || repuestaJugar.equals("y")) {
           jugar = true;
           jugador.setSaldo(500);
           System.out.println("");

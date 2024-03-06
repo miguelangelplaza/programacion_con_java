@@ -1,4 +1,4 @@
-package src.clases;
+package clases;
 /**
  * Clase Carta Juego Siete y Media
  * 
@@ -15,7 +15,7 @@ public class Carta {
   
   //Construcor
 
-  public Carta (String numero, String palo, double puntuacion){
+  public Carta (String numero, String palo, double puntuacion){ 
     this.numero = numero;
     this.palo = palo;
     this.puntuacion = puntuacion;    
@@ -23,15 +23,15 @@ public class Carta {
 
   //Getters
 
-  public String getnumero() {
+  public String getnumero() {    //Obtiene el numero de la carta
     return numero;
   }
 
-  public String getPalo() {
+  public String getPalo() {     //Obtiene el palo de la carta
     return palo;
   }
 
-  public double getPuntuacion() {
+  public double getPuntuacion() {   //Obtiene la puntuación de la carta
     return puntuacion;
   }
 

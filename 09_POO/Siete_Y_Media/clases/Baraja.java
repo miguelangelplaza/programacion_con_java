@@ -1,4 +1,4 @@
-package src.clases;
+package clases;
 /**
  * Clase Baraja Juego Siete y Media
  * 
@@ -19,7 +19,7 @@ public class Baraja {
 
   public Baraja(){
     numCartas = palos.length * numeros.length;  //Inicializamos el número de cartas multiplicando los palos por  los numeros
-    cartas = new Carta[numCartas];              //Declaramos un objeto con el numero de cartas
+    cartas = new Carta[numCartas];              //Declaramos un arrays de objetos con el numero de cartas
     inicializaBaraja();                         //LLamamos al metodo inicializaBaraja
   }
 
@@ -28,7 +28,7 @@ public class Baraja {
   private void inicializaBaraja(){
     int indice = 0;                                     //declaramos el indice
     while(indice < numCartas){                          //mientras el indice sea menor al numero de cartas lo repite
-        for(int i = 0; i < palos.length; i++){          //recorre el array de palos y numeros
+        for(int i = 0; i < palos.length; i++){          //recorre el array de palos y numeros para crear las cartas en orden
             for (int j = 0; j < numeros.length; j++) {
                 cartas[indice] = new Carta( numeros[j], palos[i], puntuacionCarta(j));
                 indice++;
