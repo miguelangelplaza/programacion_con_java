@@ -23,10 +23,16 @@ public class EjemploArrayList08 {
 
     Collections.sort(a);
 
-    System.out.println("\nNúmeros ordenados:");
-    for (int numero: a) {
-      System.out.println(numero);
-    }
+    // System.out.println("\nNúmeros ordenados:");
+    // for (int numero: a) {
+    //   System.out.println(numero);
+    // }
+
+    System.out.println("\nNúmeros ordenados de manera descntende:");
+      for (int i = a.size() -1 ; i < 0; i--) {
+        
+      }
+
   }
     
 }
