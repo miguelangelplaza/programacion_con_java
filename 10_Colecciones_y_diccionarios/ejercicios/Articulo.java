@@ -7,11 +7,11 @@ package ejercicios;
 
 class Articulo {
 
-    String codigo;
-    String descripcion;
-    double precioCompra;
-    double precioVenta;
-    int stock;
+     String codigo;
+     String descripcion;
+     double precioCompra;
+     double precioVenta;
+     int stock;
 
     Articulo(String codigo, String descripcion, double precioCompra, double precioVenta, int stock) {
         this.codigo = codigo;
