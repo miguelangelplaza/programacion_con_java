@@ -20,4 +20,4 @@ public class EjemploArrayList11 {
   }
 
 
-  ArrayList<String> opciones = new ArrayList<>(respuestasIncorrectas.subList(0, 2));
+  // ArrayList<String> opciones = new ArrayList<>(respuestasIncorrectas.subList(0, 2));
