@@ -1,4 +1,4 @@
-package ejercicios;
+
 
 /**
  * Gestesimal   /// Crea el programa GESTISIMAL (GESTIón SIMplificada de Almacén) para llevar el 
