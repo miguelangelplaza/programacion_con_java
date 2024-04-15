@@ -1,4 +1,4 @@
-package ejercicios;
+// package ejercicios;
 package T10Ejercicio14;
 
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public static void main(String[] args) {
     ArrayList<Integer> listadoCantidades = new ArrayList<Integer>();
     Boolean continuarBoolean = true;
     String productoIntroducido; 
-    Int cantidadIntroducida; 
+    int cantidadIntroducida; 
     double total = 0; 
 
     do {
