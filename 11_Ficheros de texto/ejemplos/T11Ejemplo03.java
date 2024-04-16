@@ -3,27 +3,27 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * T11Ejemplo03  Ejemplo de lectura de un fichero de texto
+ * Ejemplo de escritura en un fichero de texto
+ *
  */
+
 public class T11Ejemplo03 {
+  public static void main(String[] args) {
+    try {
+      BufferedWriter bw = new BufferedWriter(new FileWriter("ficheros/fruta.txt"));
 
-    public static void main(String[] args) {
-        try {
-            // Abrir el fichero
-            BufferedWriter bw = new BufferedWriter(new FileWriter("ficheros/fruta.txt"));
+      bw.write("aguacate");
+      bw.newLine();
+      bw.write("mango");
+      bw.newLine();
+      bw.write("níspero\n");
 
-            // Leer el fichero
-            bw.write("Naranja");
-            bw.newLine();             // Salto de línea
-            bw.write("Mango");
-            bw.newLine();
-            bw.write("Nispero\n");
+      bw.close();
 
-            // Cerrar el fichero
-            bw.close();
-
-        } catch (IOException ioe) {
-            System.out.println("No se ha podidio escribir en el fichero: " +  ioe.getMessage());
-        }
+    } catch (IOException ioe) {
+      System.out.println("No se ha podido escribir en el fichero. " + ioe.getMessage());
     }
+    
+  }
+
 }
