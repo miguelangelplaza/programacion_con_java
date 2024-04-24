@@ -1,4 +1,4 @@
-package T10Ejercicio12.java;
+package T10Ejercicio12;
 
 
 // Escribe un programa que genere una secuencia de 5 cartas de la baraja
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 public class T10Ejercicio12 {
 public static void main(String[] args) {
-    ArrayList<Carta> mano = ArrayList <Carta> ();
+    ArrayList<Carta> mano = new ArrayList <Carta> ();
     HashMap<String, Integer> parejas = new HashMap<String, Integer>();
     int puntos = 0;
 

@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:23:39 +0200] "GET /mediaejercicio4/ HTTP/1.1" 500 3374 http-bio-8080-exec-2 946
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:23:39 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:24:26 +0200] "GET /mediaejercicio4/ HTTP/1.1" 500 2529 http-bio-8080-exec-5 263
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:17:24:26 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0

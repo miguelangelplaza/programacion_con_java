@@ -1,4 +1,4 @@
-package T10Ejercicio12.java;
+package T10Ejercicio12;
 
 // Escribe un programa que genere una secuencia de 5 cartas de la baraja
 // española y que sume los puntos según el juego de la brisca. El valor de las

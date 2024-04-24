@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Media4",
+            "request": "launch",
+            "mainClass": "daw1.Media4",
+            "projectName": "mediaejercicio4"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            "preLaunchTask": "run-tomcat",
+            "postDebugTask": "stop-tomcat"
+        },
+        {
+            "type": "chrome",
+            "name": "Launch Chrome",
+            "request": "launch",
+            "url": "http://localhost:8080/mediaejercicio4/",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "--disable-cache"
+            ]
+        }
+    ]
+}

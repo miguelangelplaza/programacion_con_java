@@ -1,11 +1,13 @@
-package T10Ejercicio08.java;
+package T10Ejercicio08;
 
 import java.util.ArrayList;
 
 public class MainCarta {
+
+
   public static void main(String[] args) {
-    final int TOTAL_CARTAS = 5;
-    ArrayList<Carta> mano = new ArrayList<>();
+    final int TOTAL_CARTAS = 10;
+    ArrayList<Carta> mano = new ArrayList<Carta>();
     
     //Añadimos la primera carta
     Carta c = new Carta();
