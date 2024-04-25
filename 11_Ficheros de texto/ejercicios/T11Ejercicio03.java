@@ -19,6 +19,12 @@ import java.io.IOException;
 
 public class T11Ejercicio03 {
   public static void main(String[] args) {
+    if (args.length != 3) {
+      System.out.println("Uso del programa: Java T11Ejercicio03 linea1 linea2 mezclalineas");
+      System.out.println(0);
+    }
+
+
     try {
       BufferedReader br1 = new BufferedReader(new FileReader("ficheros/linea1.txt"));
       BufferedReader br2 = new BufferedReader(new FileReader("ficheros/linea2.txt"));

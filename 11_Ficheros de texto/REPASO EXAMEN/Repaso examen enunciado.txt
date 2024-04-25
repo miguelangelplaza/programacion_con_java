@@ -1,0 +1,5 @@
+Convertir de un fichero a Arraylist y sacarlo por pantalla 
+Convertir un fichero (clave-valor) a hashmap y sacarlo por pantalla 
+Convertir un fichero (clave-valor) a dos Arraylist y estos a fichero de salida claves.txt y valores.txt 
+Leer de un fichero de texto (clave-valor) y convertirlo a hashmap, (añadir, listar, cambiar, borrar) modificar Hashmap y sobrescribir fichero 
+Idem 4 pero pasando el fichero por argumento 
