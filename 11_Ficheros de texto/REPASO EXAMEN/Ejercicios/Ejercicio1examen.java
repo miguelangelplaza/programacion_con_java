@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 /**
  * T11Ejercicio01
+ * 
+ * ///Convertir de un fichero a Arraylist y sacarlo por pantalla 
+ * 
  */
 public class Ejercicio1examen {
     

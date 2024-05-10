@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding:0;
+  justify-content: center;
+  align-items: center;    
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#background-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/casino.jpg');
+  background-size: contain;
+  background-size: cover;
+  width: 1536px;
+  height: 729px;
+}
+
+#centrar {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Fraktur Shadowed Normal', sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 20%;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: 'Fraktur Shadowed Normal', sans-serif;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

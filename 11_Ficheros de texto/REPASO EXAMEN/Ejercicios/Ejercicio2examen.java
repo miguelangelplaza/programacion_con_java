@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
+///Convertir un fichero (clave-valor) a hashmap y sacarlo por pantalla 
+
+
 public class Ejercicio2examen {
     public static void main(String[] args) {
         String filePath = "REPASO EXAMEN/ficherito/clave-valor.txt"; // Reemplaza esto con la ruta a tu archivo

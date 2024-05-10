@@ -5,6 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+///Convertir un fichero (clave-valor) a dos Arraylist y estos a fichero de salida claves.txt y valores.txt
+
 public class Ejercicio3examen {
     public static void main(String[] args) {
         String filePath = "REPASO EXAMEN/ficherito/clave-valor.txt"; 
